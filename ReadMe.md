@@ -23,25 +23,23 @@ ArtTRUST utilise les technologies suivantes :
 
 ## Déploiement des contrats intelligents
 
-1. Assurez-vous d'avoir [Truffle](https://www.trufflesuite.com/) installé sur votre machine.
+1. Assurez-vous d'avoir [Truffle] installé sur votre machine.
 2. Naviguez vers le répertoire `contracts/` et déployez les contrats en utilisant la commande `truffle migrate --network [nom_du_reseau]`.
 3. Prenez note des adresses des contrats déployés. Vous aurez besoin de ces adresses pour les intégrer dans votre application front-end.
+
+
 4. Une fois les contrats déployés, un nouveau dossier `build/` sera généré. Copiez le dossier `contracts/` qui se trouve à l'intérieur du dossier `build/` et collez-le dans le dossier `src/` de votre application front-end.
-
-
 
 
 ## Utilisation
 
-Assurez-vous d'avoir installé [Node.js](https://nodejs.org/) et [npm](https://www.npmjs.com/) sur votre machine.
+Assurez-vous d'avoir installé [Node.js] et [npm] sur votre machine.
 
 1. Clonez ce dépôt.
 2. Installez les dépendances en exécutant `npm install`.
 3. Remplacez les adresses des contrats dans le code front-end par celles que vous avez obtenues lors du déploiement des contrats.
 4. Démarrez l'application en exécutant `npm start`.
 5. Ouvrez votre navigateur web et accédez à `http://localhost:3000`.
-6. Assurez-vous que vous avez [MetaMask](https://metamask.io/) installé dans votre navigateur et que vous êtes connecté à un réseau Ethereum (Ropsten, Rinkeby, etc.) pour interagir avec l'application.
+6. Assurez-vous que vous avez [MetaMask] installé dans votre navigateur et que vous êtes connecté à un réseau Ethereum pour interagir avec l'application.
 
-## Licence
 
-Cette application est distribuée sous la licence MIT. Voir `LICENCE` pour plus d'informations.
