@@ -1,0 +1,48 @@
+.container {
+    background-color: #f3f2f8;
+    color: #212529;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container h1 {
+    color: #6a1b9a; /* Violet */
+    font-size: 2.5em;
+}
+
+.container p {
+    font-size: 1.2em;
+    color: #212529; /* Dark */
+}
+
+.button {
+    background-color: #6a1b9a; /* Violet */
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #4a148c; /* Darker violet */
+}
+
+.button-dark {
+    background-color: #212529;
+}
+
+.button-dark:hover {
+    background-color: #040404;
+}
+

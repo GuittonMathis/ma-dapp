@@ -1,0 +1,90 @@
+.artworks-for-sale {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.header {
+  text-align: center;
+  color: #6a1b9a; /* Violet */
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.artwork-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.artwork-card {
+  border: 1px solid #6a1b9a; /* Violet */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.artwork-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.artwork-image-container {
+  width: 100%;
+  padding-top: 75%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.artwork-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.artwork-details {
+  padding: 15px;
+}
+
+.artwork-details h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #6a1b9a; /* Violet */
+}
+
+.artwork-details p {
+  font-size: 0.9em;
+  color: #212529; /* Dark */
+}
+
+button {
+  background-color: #6a1b9a; /* Violet */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #4a148c; /* Darker violet */
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+a {
+  text-decoration: none;
+  color: #6a1b9a; /* Violet */
+  display: inline-block;
+  margin-top: 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
