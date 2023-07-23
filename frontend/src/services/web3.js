@@ -1,5 +1,4 @@
 import Web3 from 'web3';
-import config from '../config/.env';
 
 export class Web3Service {
   web3 = null;
@@ -30,10 +29,10 @@ export class Web3Service {
   }
 
   getMnemonic() {
-    return config.MNEMONIC;
+    return process.env.REACT_APP_MNEMONIC;
   }
 
   getInfuraId() {
-    return config.INFURA_ID;
+    return process.env.REACT_APP_INFURA_ID;
   }
 }
