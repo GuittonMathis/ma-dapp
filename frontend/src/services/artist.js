@@ -33,5 +33,4 @@ async function getArtist(address) {
 const ArtistService = {
   getArtist,
 };
-
 export default ArtistService;
