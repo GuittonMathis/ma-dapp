@@ -68,5 +68,4 @@ function ArtworkDetailPage() {
     </div>
   );
 }
-
 export default ArtworkDetailPage;
