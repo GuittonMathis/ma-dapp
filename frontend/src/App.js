@@ -20,8 +20,7 @@ function App() {
       } else {
         console.error("Please install MetaMask.");
       }
-    }
-    
+    }S
     fetchAccount();
   }, []);
 
