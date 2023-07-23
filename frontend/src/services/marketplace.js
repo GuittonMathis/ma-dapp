@@ -25,7 +25,7 @@ async function getItemsForSale() {
   const items = await Marketplace.methods.fetchMarketItems().call();
 
   const convertedItems = await Promise.all(items.map(async item => {
-    // Fetch the artwork metadata from the Artwork contract
+    
     const artwork = await Artwork.methods.artworks(item.tokenId).call();
     
     // Convert price from Wei to Ether
