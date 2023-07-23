@@ -26,7 +26,7 @@ function ArtworkDetailPage() {
 
         const artworkInstance = new web3.eth.Contract(
           Artwork.abi,
-          '0xC7D69478e72FAA61d2F70f74b0bC14b49b66B26d'
+          '0xBF66a6DA5Ee080c2009B82F807804A694cC728aD'
         );
         const fetchedItem = await artworkInstance.methods.artworks(id).call();
         setItem(fetchedItem);

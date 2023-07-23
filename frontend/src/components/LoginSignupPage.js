@@ -29,7 +29,7 @@ function LoginSignupPage() {
       if (accounts.length > 0) {
         const artistInstance = new web3.eth.Contract(
           Artist.abi,
-          '0x796276f3A87B2E01f351040fc24415dAb854AD29'
+          '0x21487274965ecBA12FD4fA31F72991124C5Fa536'
         );
 
         console.log('Form values:', firstName, lastName, nationality, age);

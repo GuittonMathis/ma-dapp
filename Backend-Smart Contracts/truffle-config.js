@@ -24,7 +24,20 @@ module.exports = {
    }
   },
 
-  
+  goerli: {
+    provider: function() { 
+      return new HDWalletProvider(
+        `${process.env.MNEMONIC}`, 
+        `https://goerli.infura.io/v3/${process.env.INFURA_ID}`
+      )
+    },
+    network_id: "5", // ID de réseau pour Goerli, sous forme de chaîne
+    gas: 4465030,
+    gasPrice: 10000000000,
+  },
+
+
+
 
 
   mocha: {

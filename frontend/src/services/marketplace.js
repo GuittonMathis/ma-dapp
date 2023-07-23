@@ -10,11 +10,11 @@ async function init() {
   const web3 = await web3Service.getInstance();
   Marketplace = new web3.eth.Contract(
     MarketplaceContract.abi,
-    '0x9572938dA74fc383F16983CA229e1d975CbD4250'
+    '0x2eB2fb7ec62c9f02a803dD404384FDe0A7022d7B'
   );
   Artwork = new web3.eth.Contract(
     ArtworkContract.abi,
-    '0xC7D69478e72FAA61d2F70f74b0bC14b49b66B26d'  
+    '0xBF66a6DA5Ee080c2009B82F807804A694cC728aD'  
   );
 }
 

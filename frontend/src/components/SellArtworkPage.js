@@ -4,8 +4,8 @@ import { Web3Service } from '../services/web3';
 import ArtworkService from '../services/artwork';
 import MarketplaceService from '../services/marketplace';
 
-const MarketplaceContractAddress = '0x9572938dA74fc383F16983CA229e1d975CbD4250';
-const ERC721ContractAddress = '0xC7D69478e72FAA61d2F70f74b0bC14b49b66B26d';
+const MarketplaceContractAddress = '0x2eB2fb7ec62c9f02a803dD404384FDe0A7022d7B';
+const ERC721ContractAddress = '0xBF66a6DA5Ee080c2009B82F807804A694cC728aD';
 
 function SellArtworkPage() {
   const [artworkId, setArtworkId] = useState('');
