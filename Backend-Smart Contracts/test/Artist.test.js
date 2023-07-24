@@ -112,6 +112,4 @@ it("Should not allow to create an artist profile with missing details", async fu
   }
 });
 
-
-
 });

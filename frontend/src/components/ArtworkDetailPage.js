@@ -3,17 +3,17 @@ import { useParams } from 'react-router-dom';
 import Web3 from 'web3';
 import Artwork from '../contracts/Artwork.json';
 import { useNavigate } from 'react-router-dom';
-import marketplace from '../services/marketplace'; // Import the marketplace service
+import marketplace from '../services/marketplace'; 
 
 function ArtworkDetailPage() {
   const [item, setItem] = useState(null);
-  const [isLoading, setIsLoading] = useState(false); // Add a new state for loading
+  const [isLoading, setIsLoading] = useState(false); 
   const { id } = useParams();
   const navigate = useNavigate();
 
   useEffect(() => {
     async function fetchData() {
-      setIsLoading(true); // Set the loading state to true before starting to load data
+      setIsLoading(true); 
       try {
         const web3 = new Web3(Web3.givenProvider || 'http://localhost:8545');
         const networkId = await web3.eth.net.getId();
@@ -30,10 +30,10 @@ function ArtworkDetailPage() {
         );
         const fetchedItem = await artworkInstance.methods.artworks(id).call();
         setItem(fetchedItem);
-        setIsLoading(false); // Set the loading state to false once the data has been loaded
+        setIsLoading(false); 
       } catch (error) {
         console.error("Error fetching artwork details:", error);
-        setIsLoading(false); // Set the loading state to false even if there is an error
+        setIsLoading(false);
       }
     }
 
@@ -42,7 +42,7 @@ function ArtworkDetailPage() {
 
   async function handleBuy() {
     try {
-      await marketplace.buyArtwork(id); // Buy the artwork when the user clicks the "Buy" button
+      await marketplace.buyArtwork(id); 
       alert('Purchase successful!');
     } catch (error) {
       console.error('An error occurred while purchasing the artwork.', error);
@@ -50,11 +50,11 @@ function ArtworkDetailPage() {
   }
 
   if (isLoading) {
-    return <div>Loading...</div>; // Display a loading indicator while the data is loading
+    return <div>Loading...</div>; 
   }
 
   if (!item) {
-    return <div>No artwork found</div>; // Display a message if no artwork is found
+    return <div>No artwork found</div>; 
   }
 
   return (

@@ -6,7 +6,7 @@ import ArtistProfilePage from './components/ArtistProfilePage';
 import LoginSignupPage from './components/LoginSignupPage';
 import CreateArtworkPage from './components/CreateArtworkPage';
 import SellArtworkPage from './components/SellArtworkPage';
-import ArtworkForSalePage from './components/ArtworkForSalePage'; // Make sure to import the new page
+import ArtworkForSalePage from './components/ArtworkForSalePage'; 
 import './styles/App.css';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
     async function fetchAccount() {
-      if (typeof window.ethereum !== 'undefined') { // Check if MetaMask is installed
+      if (typeof window.ethereum !== 'undefined') { 
         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
         setAccount(accounts[0]);
       } else {

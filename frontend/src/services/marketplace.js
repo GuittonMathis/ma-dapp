@@ -28,12 +28,12 @@ async function getItemsForSale() {
     
     const artwork = await Artwork.methods.artworks(item.tokenId).call();
     
-    // Convert price from Wei to Ether
+   
     const web3Service = new Web3Service();
-    const web3 = await web3Service.getInstance(); // Get web3 instance here
+    const web3 = await web3Service.getInstance(); 
     const convertedPrice = web3.utils.fromWei(item.price, 'ether');
 
-    // Fetch dimensions and date from the artwork
+   
     const dimensions = artwork.dimensions;
     const date = artwork.date;
 

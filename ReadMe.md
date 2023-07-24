@@ -42,4 +42,5 @@ Assurez-vous d'avoir installé [Node.js] et [npm] sur votre machine.
 5. Ouvrez votre navigateur web et accédez à `http://localhost:3000`.
 6. Assurez-vous que vous avez [MetaMask] installé dans votre navigateur et que vous êtes connecté à un réseau Ethereum pour interagir avec l'application.
 
-
+Lien vers une vidéo de démo :
+https://drive.google.com/file/d/1ryzZL3KnTCiCL--732IGgUUVpA9TEq_b/view?usp=sharing

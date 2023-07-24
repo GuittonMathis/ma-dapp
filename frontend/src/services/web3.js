@@ -8,10 +8,10 @@ export class Web3Service {
       if (window.ethereum) {
         this.web3 = new Web3(window.ethereum);
         try {
-          // Request account access
+         
           await window.ethereum.request({ method: 'eth_requestAccounts' });
         } catch (error) {
-          // User denied account access
+         
           console.error("User denied account access");
         }
       } else if (window.web3) {
@@ -21,7 +21,7 @@ export class Web3Service {
       }
     }
 
-    return this.web3; // Returning the instance of web3
+    return this.web3; 
   }
 
   getWeb3() {

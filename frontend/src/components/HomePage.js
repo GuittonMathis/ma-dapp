@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import '../styles/HomePage.css';  // Add this line
+import '../styles/HomePage.css'; 
 
 function HomePage() {
   return (

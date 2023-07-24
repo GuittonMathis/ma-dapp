@@ -29,7 +29,7 @@ function SellArtworkPage() {
         }
 
         const marketplaceInstance = await MarketplaceService.getMarketplaceInstance();
-        const priceInWei = web3.utils.toWei(price, 'ether'); // Convert price to Wei
+        const priceInWei = web3.utils.toWei(price, 'ether'); 
         await marketplaceInstance.methods.listNFT(ERC721ContractAddress, artworkId, priceInWei, artworkTitle, artworkDescription).send({ from: accounts[0] });
       } else {
         console.log('You are not the owner of this artwork');

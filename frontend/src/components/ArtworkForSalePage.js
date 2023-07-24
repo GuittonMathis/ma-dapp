@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import MarketplaceService from '../services/marketplace';
-import '../styles/ArtworkForSalePage.css';  // Import the CSS
+import '../styles/ArtworkForSalePage.css';  
 
 function ArtworkForSalePage() {
   const [items, setItems] = useState([]);
@@ -19,7 +19,7 @@ function ArtworkForSalePage() {
     try {
       await MarketplaceService.buyArtwork(id, price);
       alert('Purchase successful!');
-      // Reload items after successful purchase
+      
       const marketplaceItems = await MarketplaceService.getItemsForSale();
       setItems(marketplaceItems);
     } catch (error) {

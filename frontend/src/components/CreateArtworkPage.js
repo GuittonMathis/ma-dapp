@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Container, Form, Row, Col } from 'react-bootstrap';
-import { Web3Service } from '../services/web3'; // Change ici, importe la classe elle-même
+import { Web3Service } from '../services/web3';
 import ArtworkService from '../services/artwork';
 
 function CreateArtworkPage() {

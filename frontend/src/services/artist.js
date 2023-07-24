@@ -1,13 +1,13 @@
 import Web3Service from './web3';
 import ArtistContract from '../contracts/Artist.json';
 
-const NETWORK_ID = '11155111'; // replace with your Sepolia network ID
+const NETWORK_ID = '11155111'; 
 
 let Artist;
 
 async function init() {
   const web3Service = await Web3Service.getInstance();
-  const web3 = web3Service.getWeb3(); // Get web3 instance using getWeb3()
+  const web3 = web3Service.getWeb3(); 
   console.log('Web3 instance: ', web3);
   console.log('Web3.eth object:', web3.eth);
 
@@ -22,7 +22,7 @@ async function init() {
 }
 
 async function getArtist(address) {
-  await init(); // Await the initialization
+  await init();
   const artistProfile = await Artist.methods.getArtistProfile(address).call();
   const name = artistProfile[0];
   const bio = artistProfile[1];
